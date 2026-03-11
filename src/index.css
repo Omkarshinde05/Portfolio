@@ -1,1 +1,87 @@
 @import "tailwindcss";
+
+/* ─── Smooth Scroll ─────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ─── Keyframes ─────────────────────────────────── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-12px); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+
+@keyframes gradient-x {
+  0%, 100% { background-position: 0% 50%; }
+  50%       { background-position: 100% 50%; }
+}
+
+@keyframes pulse-ring {
+  0%   { box-shadow: 0 0 0 0   rgba(99, 102, 241, 0.4); }
+  70%  { box-shadow: 0 0 0 12px rgba(99, 102, 241, 0); }
+  100% { box-shadow: 0 0 0 0   rgba(99, 102, 241, 0); }
+}
+
+@keyframes bounce-arrow {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(8px); }
+}
+
+@keyframes slide-down {
+  from { opacity: 0; transform: translateY(-12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* ─── Utility Classes ───────────────────────────── */
+.animate-fade-in-up  { animation: fadeInUp 0.7s ease both; }
+.animate-float       { animation: float 4s ease-in-out infinite; }
+.animate-shimmer     { 
+  background-size: 200% auto;
+  animation: shimmer 2.5s linear infinite;
+}
+.animate-gradient-x  {
+  background-size: 200% 200%;
+  animation: gradient-x 4s ease infinite;
+}
+.animate-pulse-ring  { animation: pulse-ring 2s cubic-bezier(0.455,0.03,0.515,0.955) infinite; }
+.animate-bounce-arrow{ animation: bounce-arrow 1.4s ease-in-out infinite; }
+.animate-slide-down  { animation: slide-down 0.3s ease both; }
+.animate-spin-slow   { animation: spin-slow 8s linear infinite; }
+
+/* ─── Gradient Text ─────────────────────────────── */
+.gradient-text {
+  background: linear-gradient(135deg, #6366f1, #06b6d4, #8b5cf6);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s linear infinite;
+}
+
+/* ─── Glow Effects ──────────────────────────────── */
+.glow-blue   { box-shadow: 0 0 20px rgba(99, 102, 241, 0.4); }
+.glow-cyan   { box-shadow: 0 0 20px rgba(6, 182, 212, 0.4); }
+.glow-violet { box-shadow: 0 0 20px rgba(139, 92, 246, 0.4); }
+
+/* ─── Glass Card ────────────────────────────────── */
+.glass-card {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+}
