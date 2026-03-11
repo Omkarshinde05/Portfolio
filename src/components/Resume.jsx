@@ -8,19 +8,19 @@ const skills = [
 
 const projects = [
   {
-    title: "Airbnb Clone",
-    desc: "Fully responsive Airbnb-like web app using React and Tailwind CSS with reusable components and dynamic listings.",
-    emoji: "🏡",
-  },
-  {
     title: "Food Recipe App",
     desc: "Recipe search app using a third-party API with Context API, favourites, and detailed views.",
     emoji: "🍜",
   },
   {
-    title: "To-Do List App",
-    desc: "Task management app with CRUD operations, filtering, and real-time UI updates.",
-    emoji: "✅",
+    title: "E-Commerce Store",
+    desc: "Full-stack e-commerce platform with Django & DRF backend, React frontend, cart and order management.",
+    emoji: "🛒",
+  },
+  {
+    title: "Music App",
+    desc: "Music streaming app using Django ORM for data, with song browsing, playlists, and React player UI.",
+    emoji: "🎵",
   },
 ];
 
@@ -35,7 +35,7 @@ export default function Resume() {
   };
 
   return (
-    <section id="resume" className="relative py-24 px-6 bg-slate-950 overflow-hidden">
+    <section id="resume" className="relative py-24 px-6 bg-slate-950 overflow-hidden scroll-mt-20">
 
       {/* Background glow */}
       <div className="absolute top-0 right-1/4 w-80 h-80 rounded-full

@@ -29,7 +29,7 @@ const categories = [
 
 export default function SkillsSection() {
   return (
-    <section id="skills" className="relative py-24 px-6 bg-slate-950 overflow-hidden">
+    <section id="skills" className="relative py-24 px-6 bg-slate-950 overflow-hidden scroll-mt-20">
 
       {/* Background glow */}
       <div className="absolute top-1/2 left-0 w-96 h-96 rounded-full

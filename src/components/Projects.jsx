@@ -11,20 +11,20 @@ const projects = [
     glow: "hover:shadow-orange-500/20",
   },
   {
-    title: "Airbnb Clone",
-    desc: "A modern Airbnb clone frontend built with React featuring property listings, responsive layout, and clean UI design.",
-    link: "https://github.com/yourusername/airbnb-clone",
-    tags: ["React", "Tailwind", "Router"],
-    emoji: "🏡",
-    gradient: "from-rose-500 to-pink-500",
-    glow: "hover:shadow-rose-500/20",
+    title: "E-Commerce Store",
+    desc: "A full-stack e-commerce platform built with Django & Django REST Framework on the backend and React on the frontend, featuring product listings, cart, and order management.",
+    link: "https://github.com/Omkarshinde05",
+    tags: ["React", "Django", "DRF", "REST API"],
+    emoji: "🛒",
+    gradient: "from-emerald-500 to-teal-500",
+    glow: "hover:shadow-emerald-500/20",
   },
   {
-    title: "To-Do List App",
-    desc: "A simple and efficient to-do list application to manage daily tasks with add, delete, and complete functionality.",
-    link: "https://github.com/yourusername/todo-list",
-    tags: ["React", "useState", "CRUD"],
-    emoji: "✅",
+    title: "Music App",
+    desc: "A music streaming application powered by Django ORM for data management, featuring song browsing, playlist creation, and a clean React-based player interface.",
+    link: "https://github.com/Omkarshinde05",
+    tags: ["React", "Django", "Django ORM", "REST API"],
+    emoji: "🎵",
     gradient: "from-indigo-500 to-violet-500",
     glow: "hover:shadow-indigo-500/20",
   },
@@ -41,7 +41,7 @@ const cardVariants = {
 
 export default function Projects() {
   return (
-    <section id="projects" className="relative py-24 px-6 bg-slate-950 overflow-hidden">
+    <section id="projects" className="relative py-24 px-6 bg-slate-950 overflow-hidden scroll-mt-20">
 
       {/* Background glow */}
       <div className="absolute bottom-0 right-1/4 w-96 h-96 rounded-full

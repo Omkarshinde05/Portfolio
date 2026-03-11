@@ -57,7 +57,7 @@ const cardVariants = {
 
 export default function Contact() {
   return (
-    <section id="contact" className="relative py-24 px-6 bg-slate-950 overflow-hidden">
+    <section id="contact" className="relative py-24 px-6 bg-slate-950 overflow-hidden scroll-mt-20">
 
       {/* Background glow */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-60 rounded-full
@@ -167,7 +167,8 @@ export default function Contact() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="text-center text-slate-600 text-sm mt-16"
+          className="text-center text-slate-600 text-sm pb-4"
+          style={{ marginTop: "5rem" }}
         >
           Built with React + Tailwind CSS · © {new Date().getFullYear()} Omkar Shinde
         </motion.p>

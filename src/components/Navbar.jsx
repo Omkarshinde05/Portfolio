@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const sections = ["about", "projects", "skills", "resume", "contact"];
+const sections = ["about", "skills", "projects", "resume", "contact"];
 
 export default function Navbar() {
   const [active, setActive] = useState("about");
@@ -47,7 +47,7 @@ export default function Navbar() {
           </a>
 
           {/* DESKTOP MENU */}
-          <ul className="hidden md:flex items-center gap-1 bg-slate-800/60 p-1 rounded-full border border-slate-700/40">
+          <ul className="hidden md:flex items-center gap-1 bg-slate-800/60 p-1 rounded-full border border-slate-700/40 mb-0">
             {sections.map((sec) => (
               <li key={sec}>
                 <a
@@ -108,7 +108,7 @@ export default function Navbar() {
               transition={{ duration: 0.3, ease: "easeInOut" }}
               className="md:hidden overflow-hidden"
             >
-              <ul className="flex flex-col gap-1 pb-4 pt-2">
+              <ul className="flex flex-col gap-1 pb-4 pt-2 mb-0">
                 {sections.map((sec) => (
                   <a
                     key={sec}
